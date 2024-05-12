@@ -17,7 +17,7 @@ export const addContact = async contactData => {
 
 export const deleteContact = async contactId => {
   const { data } = await axios.delete(
-    `https://6640e883a7500fcf1a9f100e.mockapi.io/contacts/${contactId}` // Додано слеш перед параметром contactId
+    `https://6640e883a7500fcf1a9f100e.mockapi.io/contacts/${contactId}` 
   );
   return data;
 };
