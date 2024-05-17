@@ -1,5 +1,5 @@
 import styles from "./SearchBox.module.css";
-import { changeFilter } from '../../redux/contactsReducer.js';
+import { changeNameFilter } from "../../redux/filtersSlice"; 
 import { useDispatch } from "react-redux";
 
 const SearchBox = () => {
@@ -7,7 +7,7 @@ const SearchBox = () => {
 
   const handleChange = (e) => {
     const searchName = e.target.value;
-    dispatch(changeFilter(searchName));
+    dispatch(changeNameFilter(searchName));
   };
 
   return (

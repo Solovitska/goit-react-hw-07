@@ -2,6 +2,7 @@ import styles from "./Contact.module.css";
 import { MdPerson } from "react-icons/md";
 import { MdPhone } from "react-icons/md";
 import { apiDelContacts } from "../../../redux/contactsOps";
+
 import { useDispatch } from "react-redux";
 
 const Contact = ({ data }) => {
